@@ -1,2 +1,2 @@
 # post-tags-by-category
-Retrieve the list of tags assigned to the category
+Retrieve the list of tags related to the category
