@@ -9,7 +9,8 @@ function custom_tags_by_category( $categories ){
 
     foreach ( $categories as $key => $cat ) {
 
-    	$category_id = get_cat_ID( $cat );
+    	$idObj = get_category_by_slug( $cat ); 
+  	$category_id = $idObj->term_id;
 	    
 	    // Set up the query for the posts with current category
 	    $list_posts = new WP_Query( array(
